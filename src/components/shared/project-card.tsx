@@ -28,14 +28,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </Badge>
       </div>
       <CardHeader>
-        <CardTitle className="font-headline text-xl text-primary-foreground group-hover:text-accent transition-colors">{project.title}</CardTitle>
+        <CardTitle className="font-headline text-xl text-primary group-hover:text-accent transition-colors">{project.title}</CardTitle>
         <CardDescription className="text-muted-foreground h-20 overflow-hidden text-ellipsis">
           {project.description}
         </CardDescription>
       </CardHeader>
       <CardContent className="flex-grow">
         <div className="mb-4">
-          <h4 className="font-semibold text-sm text-primary-foreground mb-2">Technologies Used:</h4>
+          <h4 className="font-semibold text-sm text-primary mb-2">Technologies Used:</h4>
           <div className="flex flex-wrap gap-2">
             {project.tags.map((tag) => (
               <SkillBadge key={tag} skillName={tag} variant="outline" />
@@ -44,7 +44,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </div>
         {project.codeSnippets && project.codeSnippets.length > 0 && (
           <div className="mb-4">
-            <h4 className="font-semibold text-sm text-primary-foreground mb-2">Code Snippet:</h4>
+            <h4 className="font-semibold text-sm text-primary mb-2">Code Snippet:</h4>
             <pre className="bg-background/50 p-2 rounded-md text-xs overflow-x-auto">
               <code className={`language-${project.codeSnippets[0].language} font-code text-muted-foreground`}>
                 {project.codeSnippets[0].code}

@@ -61,7 +61,7 @@ export default function ContactForm() {
   return (
     <form action={formAction} className="space-y-6">
       <div>
-        <Label htmlFor="name" className="text-primary-foreground">Name</Label>
+        <Label htmlFor="name" className="text-primary">Name</Label>
         <Input
           id="name"
           {...register('name')}
@@ -75,7 +75,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <Label htmlFor="email" className="text-primary-foreground">Email</Label>
+        <Label htmlFor="email" className="text-primary">Email</Label>
         <Input
           id="email"
           type="email"
@@ -90,7 +90,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <Label htmlFor="subject" className="text-primary-foreground">Subject</Label>
+        <Label htmlFor="subject" className="text-primary">Subject</Label>
         <Input
           id="subject"
           {...register('subject')}
@@ -104,7 +104,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <Label htmlFor="message" className="text-primary-foreground">Message</Label>
+        <Label htmlFor="message" className="text-primary">Message</Label>
         <Textarea
           id="message"
           {...register('message')}

@@ -27,19 +27,19 @@ export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
       <CardHeader>
         <div className="flex items-center gap-3 mb-2">
           {IconComponent && <IconComponent className="h-8 w-8 text-accent flex-shrink-0" />}
-          <CardTitle className="font-headline text-xl text-primary-foreground group-hover:text-accent transition-colors">{caseStudy.title}</CardTitle>
+          <CardTitle className="font-headline text-xl text-primary group-hover:text-accent transition-colors">{caseStudy.title}</CardTitle>
         </div>
         <CardDescription className="text-muted-foreground">{caseStudy.summary}</CardDescription>
       </CardHeader>
       <CardContent className="flex-grow">
-        <h4 className="font-semibold text-sm text-primary-foreground mb-2">Details:</h4>
+        <h4 className="font-semibold text-sm text-primary mb-2">Details:</h4>
         <ScrollArea className="h-24 pr-3">
           <p className="text-sm text-muted-foreground whitespace-pre-line">{caseStudy.details}</p>
         </ScrollArea>
       </CardContent>
       <CardFooter className="mt-auto border-t border-border/50 pt-4">
         <div className="w-full">
-          <h4 className="font-semibold text-xs text-primary-foreground mb-2">Skills Demonstrated:</h4>
+          <h4 className="font-semibold text-xs text-primary mb-2">Skills Demonstrated:</h4>
           <div className="flex flex-wrap gap-2">
             {caseStudy.skills.map((skill) => (
               <SkillBadge key={skill} skillName={skill} variant="outline" className="text-xs" />

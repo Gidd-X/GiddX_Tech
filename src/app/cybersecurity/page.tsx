@@ -20,7 +20,7 @@ export default function CybersecurityPage() {
     >
       {/* Skills Section */}
       <div className="mb-16">
-        <h3 className="text-2xl font-headline font-semibold text-center mb-8 text-primary-foreground">Core Cybersecurity Skills</h3>
+        <h3 className="text-2xl font-headline font-semibold text-center mb-8 text-primary">Core Cybersecurity Skills</h3>
         <Card className="bg-card p-6 shadow-lg">
           <CardContent className="flex flex-wrap justify-center gap-3">
             {cybersecuritySkills.map((skill) => (
@@ -32,13 +32,13 @@ export default function CybersecurityPage() {
 
       {/* Certifications Section */}
       <div className="mb-16">
-        <h3 className="text-2xl font-headline font-semibold text-center mb-8 text-primary-foreground">Certifications & Training</h3>
+        <h3 className="text-2xl font-headline font-semibold text-center mb-8 text-primary">Certifications & Training</h3>
         <div className="grid md:grid-cols-2 gap-6">
           {certifications.map(cert => (
              <Card key={cert.name} className="bg-card p-6 shadow-md flex items-center gap-4 hover:shadow-primary/10 transition-shadow">
               <cert.icon className="h-10 w-10 text-accent flex-shrink-0" />
               <div>
-                <p className="font-semibold text-primary-foreground">{cert.name}</p>
+                <p className="font-semibold text-primary">{cert.name}</p>
                 <p className="text-sm text-muted-foreground">{cert.issuer} - {cert.date}</p>
               </div>
             </Card>
@@ -48,7 +48,7 @@ export default function CybersecurityPage() {
       
       {/* Case Studies Section */}
       <div>
-        <h3 className="text-2xl font-headline font-semibold text-center mb-8 text-primary-foreground">Case Studies</h3>
+        <h3 className="text-2xl font-headline font-semibold text-center mb-8 text-primary">Case Studies</h3>
         {CYBERSECURITY_CASE_STUDIES.length > 0 ? (
           <div className="grid md:grid-cols-2 gap-8">
             {CYBERSECURITY_CASE_STUDIES.map((caseStudy) => (

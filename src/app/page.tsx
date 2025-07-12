@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import SectionWrapper from '@/components/shared/section-wrapper';
-import { ArrowRight, ShieldCheck, BarChart2, Briefcase, Code2 } from 'lucide-react';
+import { ArrowRight, ShieldCheck, BarChart2, Briefcase, Code2, Mail } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const expertiseAreas = [
@@ -36,7 +36,7 @@ export default function HomePage() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <SectionWrapper className="bg-gradient-to-br from-background to-card pt-20 pb-24 text-center">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-headline font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-primary-foreground via-accent to-primary-foreground">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-headline font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary">
           Innovating Tomorrow’s Solutions Today
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10">
@@ -48,7 +48,7 @@ export default function HomePage() {
               Explore Our Services <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </Button>
-          <Button asChild variant="outline" size="lg" className="border-primary text-primary-foreground hover:bg-primary/20 hover:text-accent font-semibold shadow-lg transition-transform hover:scale-105">
+          <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/20 hover:text-accent font-semibold shadow-lg transition-transform hover:scale-105">
             <Link href="/about">
               About GIDDX TECH
             </Link>
@@ -65,7 +65,7 @@ export default function HomePage() {
                 <div className="p-4 bg-accent/20 rounded-full mb-4 group-hover:bg-accent/30 transition-colors">
                   <area.icon className="h-12 w-12 text-accent" />
                 </div>
-                <CardTitle className="font-headline text-2xl text-primary-foreground">{area.title}</CardTitle>
+                <CardTitle className="font-headline text-2xl text-primary">{area.title}</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
                 <p className="text-muted-foreground text-center mb-6">{area.description}</p>
@@ -85,7 +85,7 @@ export default function HomePage() {
       {/* Call to Action Section */}
       <SectionWrapper className="bg-card">
         <div className="text-center">
-          <h2 className="text-3xl font-headline font-bold mb-4 text-primary-foreground">Let's Build the Future Together</h2>
+          <h2 className="text-3xl font-headline font-bold mb-4 text-primary">Let's Build the Future Together</h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
             GIDDX TECH-SOLUTIONS isn’t just a service provider — we’re your tech partner on the journey to growth. Let's connect.
           </p>
@@ -99,11 +99,3 @@ export default function HomePage() {
     </div>
   );
 }
-
-// Placeholder Mail icon for Button above, replace if not available or remove
-const Mail = ({className}: {className?: string}) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={className || "w-6 h-6"}>
-    <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
-    <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
-  </svg>
-);

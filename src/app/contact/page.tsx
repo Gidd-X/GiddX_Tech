@@ -14,7 +14,7 @@ export default function ContactPage() {
         <div className="md:col-span-3">
           <Card className="bg-card p-6 sm:p-8 shadow-xl">
              <CardHeader className="p-0 mb-6">
-              <CardTitle className="text-2xl font-headline text-primary-foreground">Send us a message</CardTitle>
+              <CardTitle className="text-2xl font-headline text-primary">Send us a message</CardTitle>
               <CardDescription className="text-muted-foreground">
                 Fill out the form below and we'll get back to you as soon as possible.
               </CardDescription>
@@ -25,27 +25,27 @@ export default function ContactPage() {
         <div className="md:col-span-2 space-y-6">
            <Card className="bg-card p-6 shadow-lg">
             <CardHeader className="p-0 mb-4">
-              <CardTitle className="text-xl font-headline text-primary-foreground">Contact Information</CardTitle>
+              <CardTitle className="text-xl font-headline text-primary">Contact Information</CardTitle>
             </CardHeader>
             <CardContent className="p-0 space-y-4">
               <div className="flex items-start gap-3">
                 <Mail className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="font-semibold text-primary-foreground">Email</h4>
+                  <h4 className="font-semibold text-primary">Email</h4>
                   <a href={`mailto:${SOCIAL_LINKS.email}`} className="text-muted-foreground hover:text-accent transition-colors break-all">{SOCIAL_LINKS.email}</a>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Linkedin className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="font-semibold text-primary-foreground">LinkedIn</h4>
+                  <h4 className="font-semibold text-primary">LinkedIn</h4>
                   <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">linkedin.com/in/gideon-akporido</a>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="font-semibold text-primary-foreground">Location</h4>
+                  <h4 className="font-semibold text-primary">Location</h4>
                   <p className="text-muted-foreground">Nigeria (Serving clients globally)</p>
                 </div>
               </div>
@@ -53,7 +53,7 @@ export default function ContactPage() {
           </Card>
            <Card className="bg-card p-6 shadow-lg">
             <CardHeader className="p-0 mb-4">
-              <CardTitle className="text-xl font-headline text-primary-foreground">Who We Serve</CardTitle>
+              <CardTitle className="text-xl font-headline text-primary">Who We Serve</CardTitle>
             </CardHeader>
             <CardContent className="p-0">
                <p className="text-muted-foreground">

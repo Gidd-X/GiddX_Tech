@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { NAV_LINKS } from '@/lib/constants';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, BarChart3 } from 'lucide-react';
+import { Menu, Gem } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export default function Navbar() {
@@ -16,8 +16,8 @@ export default function Navbar() {
   return (
     <header className="bg-card shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 text-2xl font-headline font-bold text-primary-foreground hover:text-accent transition-colors">
-          <BarChart3 className="h-8 w-8 text-accent" />
+        <Link href="/" className="flex items-center gap-2 text-2xl font-headline font-bold text-primary hover:text-accent transition-colors">
+          <Gem className="h-8 w-8 text-accent" />
           GIDDX TECH
         </Link>
 
@@ -43,13 +43,13 @@ export default function Navbar() {
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" aria-label="Open menu">
-                <Menu className="h-6 w-6 text-primary-foreground" />
+                <Menu className="h-6 w-6 text-primary" />
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[280px] bg-card p-0">
               <div className="flex flex-col space-y-2 p-6">
-                <Link href="/" className="flex items-center gap-2 text-2xl font-headline font-bold text-primary-foreground mb-6" onClick={() => setIsMobileMenuOpen(false)}>
-                  <BarChart3 className="h-8 w-8 text-accent" />
+                <Link href="/" className="flex items-center gap-2 text-2xl font-headline font-bold text-primary mb-6" onClick={() => setIsMobileMenuOpen(false)}>
+                  <Gem className="h-8 w-8 text-accent" />
                   GIDDX TECH
                 </Link>
                 {NAV_LINKS.map((item) => (

@@ -5,22 +5,22 @@
 @layer base {
   :root {
     --background: 212 78% 12%; /* #051d3b - Deep Navy Blue */
-    --foreground: 210 40% 98%; /* Almost white */
+    --foreground: 210 40% 98%; /* Almost white for body text */
 
     --card: 211 79% 18%; /* #0a2d52 - Slightly lighter Navy */
-    --card-foreground: 210 40% 96%;
+    --card-foreground: 210 40% 96%; /* Lighter text for cards */
 
     --popover: 211 79% 18%;
     --popover-foreground: 210 40% 96%;
 
-    --primary: 210 40% 90%; /* Silver/light gray for text/headings */
+    --primary: 210 40% 98%; /* White/Very light silver for primary text/headings */
     --primary-foreground: 212 78% 15%; /* Navy for text on primary buttons */
 
     --secondary: 212 78% 25%; /* A mid-tone blue for secondary elements */
-    --secondary-foreground: 210 40% 90%;
+    --secondary-foreground: 210 40% 98%;
 
     --muted: 212 78% 25%;
-    --muted-foreground: 210 40% 60%; /* Lighter gray for placeholder text */
+    --muted-foreground: 210 30% 75%; /* Slightly brighter muted text */
 
     --accent: 217 91% 60%; /* #3b82f6 - Bright blue for accents */
     --accent-foreground: 210 40% 98%; /* White text on accent */
@@ -61,14 +61,14 @@
     --popover: 211 79% 18%;
     --popover-foreground: 210 40% 96%;
 
-    --primary: 210 40% 90%;
+    --primary: 210 40% 98%;
     --primary-foreground: 212 78% 15%;
 
     --secondary: 212 78% 25%;
-    --secondary-foreground: 210 40% 90%;
+    --secondary-foreground: 210 40% 98%;
 
     --muted: 212 78% 25%;
-    --muted-foreground: 210 40% 60%;
+    --muted-foreground: 210 30% 75%;
 
     --accent: 217 91% 60%;
     --accent-foreground: 210 40% 98%;

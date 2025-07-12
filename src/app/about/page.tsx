@@ -33,14 +33,14 @@ export default function AboutPage() {
               />
             </div>
             <CardContent className="p-6 text-center">
-              <h3 className="text-2xl font-headline font-semibold text-primary-foreground mb-2">Gideon Akporido</h3>
+              <h3 className="text-2xl font-headline font-semibold text-primary mb-2">Gideon Akporido</h3>
               <p className="text-accent">Founder & Tech-Solutions Specialist</p>
             </CardContent>
           </Card>
           
           <Card className="bg-card shadow-lg">
             <CardHeader>
-              <CardTitle className="text-xl font-headline text-primary-foreground">Connect & Contact</CardTitle>
+              <CardTitle className="text-xl font-headline text-primary">Connect & Contact</CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
               <Button asChild variant="outline" className="w-full justify-start gap-2 hover:border-accent hover:text-accent">
@@ -70,7 +70,7 @@ export default function AboutPage() {
         {/* Right Column: Bio and Details */}
         <div className="md:col-span-2 space-y-8">
           <Card className="bg-card p-6 md:p-8 shadow-lg">
-            <CardTitle className="text-2xl font-headline mb-4 text-primary-foreground">About Our Company</CardTitle>
+            <CardTitle className="text-2xl font-headline mb-4 text-primary">About Our Company</CardTitle>
             <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
               <p>
                 GIDDX TECH-SOLUTIONS is a forward-thinking Nigerian-based tech consultancy specializing in innovative, reliable, and scalable digital solutions. We are committed to empowering individuals, startups, and organizations with the tools and strategies they need to thrive in today’s fast-paced digital world.
@@ -85,7 +85,7 @@ export default function AboutPage() {
             <Card className="bg-card p-6 shadow-lg">
                 <CardHeader className="p-0 mb-4 flex flex-row items-center gap-3">
                     <Eye className="h-8 w-8 text-accent" />
-                    <CardTitle className="text-xl font-headline text-primary-foreground">Our Vision</CardTitle>
+                    <CardTitle className="text-xl font-headline text-primary">Our Vision</CardTitle>
                 </CardHeader>
                 <CardContent className="p-0">
                     <p className="text-muted-foreground">To be a trusted leader in delivering cutting-edge technology solutions that drive sustainable growth and digital excellence across Africa and beyond.</p>
@@ -94,7 +94,7 @@ export default function AboutPage() {
              <Card className="bg-card p-6 shadow-lg">
                 <CardHeader className="p-0 mb-4 flex flex-row items-center gap-3">
                     <Target className="h-8 w-8 text-accent" />
-                    <CardTitle className="text-xl font-headline text-primary-foreground">Our Mission</CardTitle>
+                    <CardTitle className="text-xl font-headline text-primary">Our Mission</CardTitle>
                 </CardHeader>
                 <CardContent className="p-0">
                     <p className="text-muted-foreground">To deliver tailor-made solutions in cybersecurity, data analytics, IT consulting, and software engineering that solve real-world problems.</p>
@@ -103,7 +103,7 @@ export default function AboutPage() {
           </div>
 
           <Card className="bg-card p-6 md:p-8 shadow-lg">
-            <CardTitle className="text-2xl font-headline mb-4 text-primary-foreground">Why Choose Us?</CardTitle>
+            <CardTitle className="text-2xl font-headline mb-4 text-primary">Why Choose Us?</CardTitle>
             <ul className="space-y-3">
                 {whyChooseUs.map((reason) => (
                     <li key={reason} className="flex items-start gap-3">
