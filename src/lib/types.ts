@@ -1,8 +1,8 @@
 import type { LucideIcon } from 'lucide-react';
 
-export type ProjectCategory = "Data Analysis" | "Data Science" | "Cybersecurity";
+export type ProjectCategory = "Data Analysis" | "Software Engineering" | "IT Consulting" | "Cybersecurity";
 
-export const ALL_CATEGORIES: ProjectCategory[] = ["Data Analysis", "Data Science", "Cybersecurity"];
+export const ALL_CATEGORIES: ProjectCategory[] = ["Data Analysis", "Software Engineering", "IT Consulting", "Cybersecurity"];
 
 
 export interface Project {
@@ -34,7 +34,7 @@ export interface CaseStudy {
 export interface Skill {
   name: string;
   icon?: LucideIcon;
-  category: 'Data Analysis' | 'Data Science' | 'Cybersecurity' | 'General';
+  category: ProjectCategory | 'Data Science' | 'General';
 }
 
 export interface NavItem {

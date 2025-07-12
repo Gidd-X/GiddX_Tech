@@ -1,22 +1,22 @@
 import SectionWrapper from '@/components/shared/section-wrapper';
 import ContactForm from '@/components/shared/contact-form';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Mail, Linkedin, MapPin } from 'lucide-react';
+import { Mail, Linkedin, MapPin, Briefcase } from 'lucide-react';
 import { SOCIAL_LINKS } from '@/lib/constants';
 
 export default function ContactPage() {
   return (
     <SectionWrapper
       title="Get In Touch"
-      subtitle="I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out."
+      subtitle="We're ready to listen. Whether you have a project in mind, a question about our services, or just want to connect, we look forward to hearing from you."
     >
       <div className="grid md:grid-cols-5 gap-12 items-start">
         <div className="md:col-span-3">
           <Card className="bg-card p-6 sm:p-8 shadow-xl">
              <CardHeader className="p-0 mb-6">
-              <CardTitle className="text-2xl font-headline text-primary-foreground">Send me a message</CardTitle>
+              <CardTitle className="text-2xl font-headline text-primary-foreground">Send us a message</CardTitle>
               <CardDescription className="text-muted-foreground">
-                Fill out the form below and I'll get back to you as soon as possible.
+                Fill out the form below and we'll get back to you as soon as possible.
               </CardDescription>
             </CardHeader>
             <ContactForm />
@@ -39,25 +39,25 @@ export default function ContactPage() {
                 <Linkedin className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-primary-foreground">LinkedIn</h4>
-                  <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">linkedin.com/in/yourusername</a>
+                  <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">linkedin.com/in/gideon-akporido</a>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-primary-foreground">Location</h4>
-                  <p className="text-muted-foreground">Remote / Your City, Country (Optional)</p>
+                  <p className="text-muted-foreground">Nigeria (Serving clients globally)</p>
                 </div>
               </div>
             </CardContent>
           </Card>
            <Card className="bg-card p-6 shadow-lg">
             <CardHeader className="p-0 mb-4">
-              <CardTitle className="text-xl font-headline text-primary-foreground">Availability</CardTitle>
+              <CardTitle className="text-xl font-headline text-primary-foreground">Who We Serve</CardTitle>
             </CardHeader>
             <CardContent className="p-0">
                <p className="text-muted-foreground">
-                I am currently available for freelance projects and full-time opportunities. Let's connect to see how we can work together.
+                We work with SMEs, startups, NGOs, educational institutions, and individuals seeking growth, transformation, and tech resilience.
               </p>
             </CardContent>
           </Card>

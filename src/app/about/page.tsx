@@ -1,27 +1,22 @@
 import Image from 'next/image';
 import SectionWrapper from '@/components/shared/section-wrapper';
-import SkillBadge from '@/components/shared/skill-badge';
-import { SKILLS_LIST, SOCIAL_LINKS } from '@/lib/constants';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { Download, Mail, Linkedin, Github } from 'lucide-react';
+import { Download, Mail, Linkedin, Github, CheckCircle, Eye, Target } from 'lucide-react';
+import { SOCIAL_LINKS } from '@/lib/constants';
+
+const whyChooseUs = [
+  'Deep Technical Expertise',
+  'Tailored & Scalable Solutions',
+  'Commitment to Client Success',
+  'A Blend of Local Insight and Global Perspective',
+  'Ethical, Transparent, and Result-Driven Approach',
+];
 
 export default function AboutPage() {
-  const dataAnalysisSkills = SKILLS_LIST.filter(s => s.category === 'Data Analysis');
-  const dataScienceSkills = SKILLS_LIST.filter(s => s.category === 'Data Science');
-  const cybersecuritySkills = SKILLS_LIST.filter(s => s.category === 'Cybersecurity');
-  const generalSkills = SKILLS_LIST.filter(s => s.category === 'General');
-  
-  const skillCategories = [
-    { title: 'Data Analysis', skills: dataAnalysisSkills },
-    { title: 'Data Science', skills: dataScienceSkills },
-    { title: 'Cybersecurity', skills: cybersecuritySkills },
-    { title: 'General Proficiencies', skills: generalSkills },
-  ];
-
   return (
-    <SectionWrapper title="About Me" subtitle="Passionate about data, security, and technology-driven solutions.">
+    <SectionWrapper title="About GIDDX TECH-SOLUTIONS" subtitle="Innovating Tomorrow’s Solutions Today">
       <div className="grid md:grid-cols-3 gap-8 items-start">
         {/* Left Column: Photo and Contact */}
         <div className="md:col-span-1 space-y-6">
@@ -29,17 +24,17 @@ export default function AboutPage() {
             <div className="relative w-full aspect-square">
               <Image
                 src="https://placehold.co/400x400.png"
-                alt="Professional Photo"
+                alt="Gideon Akporido"
                 layout="fill"
                 objectFit="cover"
                 className="transition-transform hover:scale-105 duration-300"
-                data-ai-hint="professional portrait"
+                data-ai-hint="professional portrait man"
                 priority
               />
             </div>
             <CardContent className="p-6 text-center">
-              <h3 className="text-2xl font-headline font-semibold text-primary-foreground mb-2">Your Name</h3>
-              <p className="text-accent">Data & Security Professional</p>
+              <h3 className="text-2xl font-headline font-semibold text-primary-foreground mb-2">Gideon Akporido</h3>
+              <p className="text-accent">Founder & Tech-Solutions Specialist</p>
             </CardContent>
           </Card>
           
@@ -64,48 +59,60 @@ export default function AboutPage() {
                 </Link>
               </Button>
               <Button variant="default" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground justify-start gap-2 mt-2">
-                 {/* This would link to a PDF resume, ensure it's in /public */}
-                <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                  <Download className="h-5 w-5" /> Download Resume
+                <Link href="/contact">
+                  <Mail className="h-5 w-5" /> Work With Us
                 </Link>
               </Button>
             </CardContent>
           </Card>
         </div>
 
-        {/* Right Column: Bio and Skills */}
+        {/* Right Column: Bio and Details */}
         <div className="md:col-span-2 space-y-8">
           <Card className="bg-card p-6 md:p-8 shadow-lg">
-            <CardTitle className="text-2xl font-headline mb-4 text-primary-foreground">My Journey</CardTitle>
+            <CardTitle className="text-2xl font-headline mb-4 text-primary-foreground">About Our Company</CardTitle>
             <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
               <p>
-                Hello! I'm a dedicated professional with a multifaceted passion for the world of data and cybersecurity. My journey began with a fascination for uncovering stories hidden within datasets, which naturally led me to explore the robust field of data analysis. I thrive on transforming complex information into clear, actionable insights that drive decision-making.
+                GIDDX TECH-SOLUTIONS is a forward-thinking Nigerian-based tech consultancy specializing in innovative, reliable, and scalable digital solutions. We are committed to empowering individuals, startups, and organizations with the tools and strategies they need to thrive in today’s fast-paced digital world.
               </p>
               <p>
-                As I delved deeper, the predictive power of data science captivated me. I've honed my skills in machine learning and statistical modeling, building solutions that not only understand the present but also forecast future trends. This analytical mindset extends to cybersecurity, where I apply a data-driven approach to identify vulnerabilities, mitigate risks, and fortify digital defenses.
-              </p>
-              <p>
-                I believe that the intersection of these three fields – Data Analysis, Data Science, and Cybersecurity – is where true innovation lies. My goal is to leverage this unique blend of expertise to create intelligent, secure, and impactful solutions. I am a lifelong learner, constantly seeking new challenges and opportunities to expand my knowledge.
+                Founded by Gideon Akporido, a tech-solutions specialist with a passion for data, cybersecurity, and transformative technology, GIDDX TECH-SOLUTIONS was born out of a vision to bridge the digital gap between potential and performance in Africa’s growing tech ecosystem.
               </p>
             </div>
           </Card>
 
-          {skillCategories.map(category => (
-            category.skills.length > 0 && (
-              <Card key={category.title} className="bg-card p-6 shadow-lg">
-                <CardHeader className="p-0 mb-4">
-                  <CardTitle className="text-xl font-headline text-primary-foreground">{category.title}</CardTitle>
+          <div className="grid sm:grid-cols-2 gap-8">
+            <Card className="bg-card p-6 shadow-lg">
+                <CardHeader className="p-0 mb-4 flex flex-row items-center gap-3">
+                    <Eye className="h-8 w-8 text-accent" />
+                    <CardTitle className="text-xl font-headline text-primary-foreground">Our Vision</CardTitle>
                 </CardHeader>
                 <CardContent className="p-0">
-                  <div className="flex flex-wrap gap-2">
-                    {category.skills.map((skill) => (
-                      <SkillBadge key={skill.name} skillName={skill.name} icon={skill.icon} />
-                    ))}
-                  </div>
+                    <p className="text-muted-foreground">To be a trusted leader in delivering cutting-edge technology solutions that drive sustainable growth and digital excellence across Africa and beyond.</p>
                 </CardContent>
-              </Card>
-            )
-          ))}
+            </Card>
+             <Card className="bg-card p-6 shadow-lg">
+                <CardHeader className="p-0 mb-4 flex flex-row items-center gap-3">
+                    <Target className="h-8 w-8 text-accent" />
+                    <CardTitle className="text-xl font-headline text-primary-foreground">Our Mission</CardTitle>
+                </CardHeader>
+                <CardContent className="p-0">
+                    <p className="text-muted-foreground">To deliver tailor-made solutions in cybersecurity, data analytics, IT consulting, and software engineering that solve real-world problems.</p>
+                </CardContent>
+            </Card>
+          </div>
+
+          <Card className="bg-card p-6 md:p-8 shadow-lg">
+            <CardTitle className="text-2xl font-headline mb-4 text-primary-foreground">Why Choose Us?</CardTitle>
+            <ul className="space-y-3">
+                {whyChooseUs.map((reason) => (
+                    <li key={reason} className="flex items-start gap-3">
+                        <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0"/>
+                        <span className="text-muted-foreground text-lg">{reason}</span>
+                    </li>
+                ))}
+            </ul>
+          </Card>
         </div>
       </div>
     </SectionWrapper>

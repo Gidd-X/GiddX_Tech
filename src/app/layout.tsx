@@ -5,8 +5,8 @@ import Navbar from '@/components/layout/navbar';
 import Footer from '@/components/layout/footer';
 
 export const metadata: Metadata = {
-  title: 'Data Fortress Portfolio',
-  description: 'A portfolio showcasing expertise in data analysis, data science, and cybersecurity.',
+  title: 'GIDDX TECH-SOLUTIONS | Innovating Tomorrow’s Solutions Today',
+  description: 'A forward-thinking Nigerian-based tech consultancy specializing in cybersecurity, data analytics, IT consulting, and software engineering.',
 };
 
 export default function RootLayout({

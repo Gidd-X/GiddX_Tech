@@ -20,7 +20,7 @@ export default function Footer() {
           </Link>
         </div>
         <p className="text-sm">
-          &copy; {currentYear} Data Fortress Portfolio. All rights reserved.
+          &copy; {currentYear} GIDDX TECH-SOLUTIONS. All rights reserved.
         </p>
          <p className="text-xs mt-2">
           Built with Next.js and Tailwind CSS.

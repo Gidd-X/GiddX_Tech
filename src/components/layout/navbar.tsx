@@ -18,7 +18,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 text-2xl font-headline font-bold text-primary-foreground hover:text-accent transition-colors">
           <BarChart3 className="h-8 w-8 text-accent" />
-          DataFortress
+          GIDDX TECH
         </Link>
 
         {/* Desktop Navigation */}
@@ -50,7 +50,7 @@ export default function Navbar() {
               <div className="flex flex-col space-y-2 p-6">
                 <Link href="/" className="flex items-center gap-2 text-2xl font-headline font-bold text-primary-foreground mb-6" onClick={() => setIsMobileMenuOpen(false)}>
                   <BarChart3 className="h-8 w-8 text-accent" />
-                  DataFortress
+                  GIDDX TECH
                 </Link>
                 {NAV_LINKS.map((item) => (
                   <Button

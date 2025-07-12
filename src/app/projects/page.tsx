@@ -6,7 +6,6 @@ import ProjectCard from '@/components/shared/project-card';
 import { PROJECTS_DATA } from '@/lib/constants';
 import type { Project, ProjectCategory } from '@/lib/types';
 import { ALL_CATEGORIES } from '@/lib/types';
-import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Filter, Search } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
@@ -28,19 +27,19 @@ export default function ProjectsPage() {
 
   return (
     <SectionWrapper
-      title="My Projects"
-      subtitle="A collection of my work in Data Analysis, Data Science, and Cybersecurity. Use the filters to explore specific areas."
+      title="Our Services & Case Studies"
+      subtitle="A collection of our work across our core service areas. Use the filters to explore specific categories."
     >
       <div className="mb-8 flex flex-col sm:flex-row gap-4 items-center justify-between p-4 bg-card rounded-lg shadow">
         <div className="relative w-full sm:w-auto sm:flex-grow max-w-xs">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
           <Input
             type="text"
-            placeholder="Search projects..."
+            placeholder="Search services..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className="pl-10 bg-input border-border focus:border-accent"
-            aria-label="Search projects"
+            aria-label="Search services"
           />
         </div>
         <div className="flex items-center gap-2 w-full sm:w-auto">
@@ -53,7 +52,7 @@ export default function ProjectsPage() {
               <SelectValue placeholder="Filter by category" />
             </SelectTrigger>
             <SelectContent className="bg-popover border-popover">
-              <SelectItem value="All">All Categories</SelectItem>
+              <SelectItem value="All">All Services</SelectItem>
               {ALL_CATEGORIES.map(category => (
                 <SelectItem key={category} value={category}>{category}</SelectItem>
               ))}
