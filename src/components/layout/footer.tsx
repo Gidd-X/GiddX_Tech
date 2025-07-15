@@ -1,9 +1,16 @@
+'use client';
+
 import Link from 'next/link';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { SOCIAL_LINKS } from '@/lib/constants';
+import { useState, useEffect } from 'react';
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
 
   return (
     <footer className="bg-card border-t border-border py-8 text-center text-muted-foreground">
