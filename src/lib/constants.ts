@@ -17,7 +17,7 @@ export const PROJECTS_DATA: Project[] = [
     category: 'Data Analysis',
     tags: ['Tableau', 'SQL', 'Data Visualization', 'Business Intelligence', 'Power BI'],
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'sales dashboard',
+    imageHint: 'sales dashboard analytics',
     codeLink: 'https://github.com/giddx/sales-dashboard-demo',
     liveLink: '#',
   },
@@ -28,7 +28,7 @@ export const PROJECTS_DATA: Project[] = [
     category: 'Software Engineering',
     tags: ['React', 'Node.js', 'PostgreSQL', 'API Design', 'System Architecture'],
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'software application',
+    imageHint: 'software application interface',
     codeLink: 'https://github.com/giddx/custom-crm-demo',
   },
   {
@@ -38,7 +38,7 @@ export const PROJECTS_DATA: Project[] = [
     category: 'IT Consulting',
     tags: ['IT Strategy', 'Cloud Migration', 'System Integration', 'Vendor Management'],
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'it consulting',
+    imageHint: 'server room infrastructure',
   },
    {
     id: 'data-solutions-2',
@@ -61,7 +61,7 @@ export const CYBERSECURITY_CASE_STUDIES: CaseStudy[] = [
     skills: ['Incident Response', 'Phishing Analysis', 'Security Awareness', 'User Training'],
     icon: ShieldCheck,
     imageUrl: 'https://placehold.co/400x300.png',
-    imageHint: 'phishing email'
+    imageHint: 'phishing email interface'
   },
   {
     id: 'cs-case-2',
@@ -71,7 +71,7 @@ export const CYBERSECURITY_CASE_STUDIES: CaseStudy[] = [
     skills: ['Penetration Testing', 'Vulnerability Management', 'Risk Assessment', 'Remediation'],
     icon: Lock,
     imageUrl: 'https://placehold.co/400x300.png',
-    imageHint: 'security audit'
+    imageHint: 'security code lock'
   },
 ];
 

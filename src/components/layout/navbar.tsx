@@ -14,7 +14,7 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-card shadow-md sticky top-0 z-50">
+    <header className="bg-card/95 backdrop-blur-sm border-b border-border/50 shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 text-2xl font-headline font-bold text-primary hover:text-accent transition-colors">
           <Gem className="h-8 w-8 text-accent" />
@@ -26,7 +26,7 @@ export default function Navbar() {
           {NAV_LINKS.map((item) => (
             <Button key={item.label} variant="ghost" asChild
               className={cn(
-                "text-primary-foreground hover:bg-accent/20 hover:text-accent",
+                "text-primary hover:bg-accent/20 hover:text-accent font-medium text-base",
                 pathname === item.href && "bg-accent/30 text-accent font-semibold"
               )}
             >
@@ -46,7 +46,7 @@ export default function Navbar() {
                 <Menu className="h-6 w-6 text-primary" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[280px] bg-card p-0">
+            <SheetContent side="right" className="w-[280px] bg-card p-0 border-l-border/60">
               <div className="flex flex-col space-y-2 p-6">
                 <Link href="/" className="flex items-center gap-2 text-2xl font-headline font-bold text-primary mb-6" onClick={() => setIsMobileMenuOpen(false)}>
                   <Gem className="h-8 w-8 text-accent" />
@@ -58,7 +58,7 @@ export default function Navbar() {
                     variant="ghost"
                     asChild
                     className={cn(
-                      "w-full justify-start text-lg py-3 text-primary-foreground hover:bg-accent/20 hover:text-accent",
+                      "w-full justify-start text-lg py-3 text-primary hover:bg-accent/20 hover:text-accent",
                       pathname === item.href && "bg-accent/30 text-accent font-semibold"
                     )}
                     onClick={() => setIsMobileMenuOpen(false)}
